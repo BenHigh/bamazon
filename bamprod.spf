@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>bamazon</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>bamazon</string>
+			<key>port</key>
+			<integer>3306</integer>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJX
+			TlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAF
+			gAdUdHlwZVRyb3dzXxAdU2VsZWN0aW9uRGV0YWlsVHlwZU5TSW5k
+			ZXhTZXTSFwsYGVxOU1JhbmdlQ291bnQQAIAG0hscHR5aJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1pOU0luZGV4U2V0oh8gWk5TSW5kZXhTZXRY
+			TlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVk
+			QXJjaGl2ZXLRJidUZGF0YYABAAgAEQAaACMALQAyADcAQABGAE0A
+			VQBgAGcAagBsAG4AcQBzAHUAdwB8AIEAoQCmALMAtQC3ALwAxwDQ
+			ANsA3gDpAPIA9wEEAQcBGQEcASEAAAAAAAACAQAAAAAAAAAoAAAA
+			AAAAAAAAAAAAAAABIw==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {694, 450}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>DROP DATABASE IF EXISTS bamazon;
+
+CREATE DATABASE bamazon;
+
+USE bamazon;
+
+CREATE TABLE products (
+  id INT NOT NULL AUTO_INCREMENT,
+  prod_name VARCHAR(50) NOT NULL,
+  dep_name  VARCHAR(50),
+  price DECIMAL(10,2) NOT NULL,
+  stock INT(10) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("GTX 1070ti", "Computers", 450.00, 77);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("GTX 1080", "Computers", 550.00, 50);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Desktop Speakers", "Computers", 50.00, 45);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Motor Oil", "Automotive", 25.00, 83);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Stapler", "Office Supplies", 9.00, 101);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Shoes", "Footware", 50.00, 38);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Wig", "Hairpieces", 50.00, 250);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Soccer Balls", "Sports", 12.00, 100);
+
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Paper", "Office Supplies", 25.00, 100);
+
+SELECT * FROM products;</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>219</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>DROP DATABASE IF EXISTS bamazon;
+CREATE DATABASE bamazon;
+USE bamazon;
+CREATE TABLE products (
+  id INT NOT NULL AUTO_INCREMENT,
+  prod_name VARCHAR(50) NOT NULL,
+  dep_name  VARCHAR(50),
+  price DECIMAL(10,2) NOT NULL,
+  stock INT(10) NOT NULL,
+  PRIMARY KEY (id)
+);
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("GTX 1070ti", "Computers", 450.00, 77);
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("GTX 1080", "Computers", 550.00, 50);
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Desktop Speakers", "Computers", 50.00, 45);
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Motor Oil", "Automotive", 25.00, 83);
+INSERT INTO products (prod_name, dep_name, price, stock)
+VALUES ("Stapler", "Office Supplies" 9.00, 101)</string>
+		<string>SELECT * FROM programming_languages</string>
+		<string>INSERT INTO programming_languages(lang, rating)
+VALUES("C++", 5),
+("MATLAB", 3),
+("HTML", 7)</string>
+		<string>INSERT INTO programming_languages(lang, rating)
+VALUES("C++", 5),
+VALUES("MATLAB", 3),
+VALUES("HTML", 7)</string>
+		<string>TRUNCATE programming_languages</string>
+		<string>INSERT INTO programming_languages(lang, rating, mastered)
+VALUES("JAVA", 7, false)</string>
+		<string>INSERT INTO programming_languages(lang, rating, mastered)
+VALUES("JAVASCRIPT", 10, true)</string>
+		<string>INSERT INTO programming_languages(lang, rating, mastered)
+VALUES("JAVASCRIPT", 10)</string>
+		<string>INSERT INTO programming_languages(lang, rating, mastered)
+VALUES("PYTHON", 8, false)</string>
+		<string>INSERT INTO programming_language(lang, rating, mastered)
+VALUES("PYTHON", 8, false)</string>
+		<string>CREATE TABLE programming_languages(
+  -- Create a numeric column called "id" which will automatically increment its default value as we create new rows. --
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+
+  -- Create a string column called "language" --
+  lang VARCHAR(50),
+
+  -- Create an integer column called "rating" --
+  rating INTEGER(11),
+
+  -- Create a boolean column called "mastered" which will automatically fill --  
+  -- with true when a new row is made and the value isn't otherwise defined. --
+  mastered BOOLEAN DEFAULT true,
+
+  -- Set the id as this table's primary key
+  PRIMARY KEY (id)
+)</string>
+		<string>-- Drops the programming_db if it already exists --
+DROP DATABASE IF EXISTS programming_db;
+-- Create a database called programming_db --
+CREATE DATABASE programming_db;
+-- Use programming db for the following statements --
+USE programming_db;
+CREATE TABLE programming_languages(
+  -- Create a numeric column called "id" which will automatically increment its default value as we create new rows. --
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+
+  -- Create a string column called "language" --
+  lang VARCHAR(50),
+
+  -- Create an integer column called "rating" --
+  rating INTEGER(11),
+
+  -- Create a boolean column called "mastered" which will automatically fill --  
+  -- with true when a new row is made and the value isn't otherwise defined. --
+  mastered BOOLEAN DEFAULT true,
+
+  -- Set the id as this table's primary key
+  PRIMARY KEY (id)
+);
+-- Create new example rows</string>
+		<string>-- Drops the programming_db if it already exists --
+DROP DATABASE IF EXISTS programming_db;
+-- Create a database called programming_db --
+CREATE DATABASE programming_db;
+-- Use programming db for the following statements --
+USE programming_db;
+CREATE TABLE programming_languages(
+  -- Create a numeric column called "id" which will automatically increment its default value as we create new rows. --
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+
+  -- Create a string column called "language" --
+  lang VARCHAR(50),
+
+  -- Create an integer column called "rating" --
+  rating INTEGER(11),
+
+  -- Create a boolean column called "mastered" which will automatically fill --  
+  -- with true when a new row is made and the value isn't otherwise defined. --
+  mastered BOOLEAN
+
+  -- Set the id as this table's primary key
+  PRIMARY KEY (id)
+)</string>
+		<string>-- Create new example rows</string>
+		<string>SELECT * FROM favorite_db.favorite_foods</string>
+		<string>INSERT INTO favorite_foods (food, score)
+VALUES("CHICKEN PARM", 9);
+INSERT INTO favorite_movies (movie, score)
+VALUES("The Matrix", 9);
+SELECT * FROM favorite_db.favorite_foods;
+SELECT * FROM favorite_db.favorite_movies</string>
+		<string>CREATE TABLE favorite_movies (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  movie VARCHAR(100) NOT NULL,
+  -- Creates a boolean column called "five_times" that sets the default value to false if nothing is entered --
+  five_times BOOLEAN NOT NULL DEFAULT false,
+  score INTEGER(10),
+  PRIMARY KEY(id)
+)</string>
+		<string>CREATE TABLE favorite_movies (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  movie VARCHAR(100) NOT NULL,
+  -- Creates a boolean column called "five_times" that sets the default value to false if nothing is entered --
+  five_times BOOLEAN NOT NULL DEFAULT false,
+  score INTEGER(10)
+  PRIMARY KEY(id)
+)</string>
+		<string>INSERT INTO favorite_foods (food, score)
+VALUES("CHICKEN PARM", 9)</string>
+		<string>SELECT * FROM favorite_db.favorite_foods;
+INSERT INTO favorite_foods (food, score)
+VALUES("CHICKEN PARM", 9)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.20</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
