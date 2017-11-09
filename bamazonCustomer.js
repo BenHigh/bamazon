@@ -71,7 +71,7 @@ function purchase(id, quant){
 			console.log("Your total cost for " + quant + " x " + res[0].prod_name  + " is: $" + total + ".");
 			console.log("Thanks for shopping with BAMAZON!");
 		}else{
-			console.log("Insufficient stock of " + res[0].prod_name + " to fulfill your order.");
+			console.log("Insufficient stock of " + res[0].prod_name + "  to fulfill your order.");
 		};
 		console.log("");
 		listAll();
